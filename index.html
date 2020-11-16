@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>OpenCoVid</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/ihover.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
+        <img id='logo' src="https://res.cloudinary.com/serfati/image/upload/v1605445665/OpenCoVid19/logo_ntvgyv.png"
+          alt="Homepage" style="max-width: 19%">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#solution2">How?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#documents">Documents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#projects">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://driverpose.ceng.metu.edu.tr/" id="getStarted"
+              target="_blank">Get_Started!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">OpenCoVid</h1>
+        <h2 class="text-white-nec mx-auto mt-2 mb-5">Ai-based software to detect social distancing and face mask duaring
+          covid-19.</h2>
+        <a href="index.html#about" class="btn btn-primary js-scroll-trigger">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="bg-black text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="container-margin"></div>
+          <h2 class="text-white mb-4">About the Project</h2>
+          <p class="text-white-nec">
+            OpenCoVid is a software product that alerts the driver when distracted.
+          </p>
+          <p class="text-white-nec">
+            With the help of a camera, images of the driver will be continuously sent to the hardware component, Jetson
+            Nano. By using neural networks, whether the driver is distracted or not will be predicted. Moreover, if the
+            driver is distracted, he/she will be notified according to the 10 different distraction types within
+            seconds.
+          </p>
+          <p class="text-white-nec">
+            OpenCoVid also offers a user interface in which users can keep track of their distractions. By using this
+            interface, users can see where, when and how they are distracted. The statistics of the distractions will
+            also be shown to the user. Moreover, the user will have the ability to choose the alarming sounds freely via
+            the user interface.
+          </p>
+          <p class="text-white-nec">
+            OpenCoVid keeps you safe and takes you to your loved ones, by alarming when needed.
+          </p>
+        </div>
+      </div>
+      <div class="container-margin"></div>
+      <iframe width="644" height="362" src="https://www.youtube.com/embed/5ejT8FqglLM" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="problem" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container" id="problem_txt">
+            <h2 class="text-white mb-4">Problem</h2>
+            <p class="text-white-nec">
+              The World Health Organization (WHO) reported 1.25 million deaths yearly due to road trafficaccidents
+              worldwide and the number has been continuously increasing over the last few years.Nearly fifth of these
+              accidents are caused by distracted drivers.
+            </p>
+
+            <p class="text-white-nec">
+              The aim of our product is to warn the driver with an alarm when he/she is distracted and help them analyze
+              their distractions via our web application.
+            </p>
+            <a href="index.html#solution" class="btn btn-primary js-scroll-trigger">See the Solution</a>
+            <br></br>
+          </div>
+        </div>
+        <!--Statistic Cards-->
+        <div class="col-md-6">
+          <div class="card statistics col">
+            <div class="d-flex">
+              <i class="fa fa-bar-chart fa-2x mr-2"></i>
+              <h4 class="statistics-header">In 2019,</h4>
+            </div>
+            <p>3,179 people were killed and 431,000 were injured in motor vehicle crashes involving <b>distracted
+                drivers</b>.</p>
+          </div>
+
+          <div class="card statistics col">
+            <div class="d-flex">
+              <i class="fas fa-mobile-alt fa-2x mr-2"></i>
+              <h4 class="statistics-header">660,000 drivers</h4>
+            </div>
+            <p>are using cell phones or manipulating electronic devices <b>while driving</b> at any given daylight
+              moment.</p>
+          </div>
+
+          <div class="card statistics col">
+            <div class="d-flex">
+              <i class="fa fa-pie-chart fa-2x mr-2"></i>
+              <h4 class="statistics-header">10% of all drivers</h4>
+            </div>
+            <p>ages <b>15 to 19</b> involved in fatal crashes were reported as distracted at the time of the crashes.
+            </p>
+          </div>
+
+          <div class="card statistics col">
+            <div class="d-flex">
+              <i class="fas fa-car-crash fa-2x mr-2 "></i>
+              <h4 class="statistics-header">Drivers in their 20s</h4>
+            </div>
+            <p>are <b>38% of the distracted drivers</b> who were using cell phones in fatal crashes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-margin"></div>
+
+      <!-- <img class="img-fluid" src="img/distracted_driving_stats.png" alt="" id="problemImage"> -->
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="solution" class="solution-section text-center">
+    <div class="container">
+      <div class="col-md-8 mx-auto">
+        <h2 class="text-white mb-4">Our Solution</h2>
+        <p class="text-white-nec">
+          We use an in-car system and machine learning to detect distracted driving. The in-car system consists of a
+          camera that we install on the
+          upper right side of the car and a small computer which we run the machine learning model on. The machine
+          learning part of the system consists of
+          Convolutional Neural Networks (CNN). We store the distraction information including date, time, location and
+          picture of the distraction moment in a
+          MySQL database in our server. We use these information to inform the user about their distracted driver habits
+          via our user-friendly web application.
+        </p>
+        <p class="text-white-nec">
+          What makes us unique, is that we implement the warning system completely inside your car.
+          Thus, it takes us only seconds to warn you,
+          if you are distracted.
+        </p>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-2 col-md-offset-1">
+          <div class="cardSol">
+            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <div class="content">
+              <div class="front"
+                style="background-image: url('https://senior.ceng.metu.edu.tr/2020/driverposeest/img/security.png')">
+                <div class="inner">
+                  <h2>Getting Images</h2>
+                  <div class="rating">
+                    <i class="fas fa-camera"></i>
+
+                  </div>
+                  <label for="card1" class="button" aria-hidden="true">
+                    Details
+                  </label>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+
+                  <div class="description">
+                    <p>We first get the key frames from the camera situated in the upper right corner of the car.
+                      The camera is connected to the small computer which is the main component of the in-car system.
+                    </p>
+                    <p></p>
+                  </div>
+                  <div class="location">Getting Frames</div>
+
+                  <label for="card1" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <div class="cardSol">
+            <input type="checkbox" id="card2" class="more" aria-hidden="true">
+            <div class="content">
+              <div class="front"
+                style="background-image: url('https://senior.ceng.metu.edu.tr/2020/driverposeest/img/modelbackground.png')">
+                <div class="inner">
+                  <h2>Our Model</h2>
+                  <div class="rating">
+                    <i class="fas fa-bezier-curve"></i>
+
+                  </div>
+                  <label for="card2" class="button" aria-hidden="true">
+                    Details
+                  </label>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+
+                  <div class="description">
+                    Model: We decided to utilize a technique called transfer learning to make the learning faster and
+                    better due to our limited dataset.
+                    VGG16 We used VGG16 pre-trained network trained with 'imagenet'.
+                    We changed the last few layers to adapt the network to our own dataset.
+
+                    <br></br>
+                    Dataset: Our model "learned" what distracted driving looks like from images obtained from a <a
+                      href="https://www.kaggle.com/c/state-farm-distracted-driver-detection">Kaggle Competition</a>
+                    sponsored by State Farm Insurance.
+                    We performed histogram matching to try to adapt this dataset to the images we take by our own
+                    camera. The 10 classes of distracted driving we classify:
+                    <br></br>
+                    c0: texting with right hand
+                    <br></br>
+                    c1: texting with left hand
+                    <br></br>
+                    c2: talking to passanger
+                    <br></br>
+                    c3: talking on the phone with right hand
+                    <br></br>
+                    c4: talking on the phone with left hand
+                    <br></br>
+                    c5: safe driving
+                    <br></br>
+                    c6: reaching behind
+                    <br></br>
+                    c7: operating the radio
+                    <br></br>
+                    c8: eating/drinking
+                    <br></br>
+                    c9: doing hair/make-up
+                    <br></br>
+                    Accuracy: We achieved over %80 (84.7) testing with around 20k pictures with the dataset. However, as
+                    the dataset was a simulated environments and
+                    due to the outside factors, it does not generalize well for real-life images.
+                    <br></br>
+                  </div>
+                  <div class="location">Prediction</div>
+
+                  <label for="card2" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <div class="cardSol">
+            <input type="checkbox" id="card3" class="more" aria-hidden="true">
+            <div class="content">
+              <div class="front"
+                style="background-image: url(https://senior.ceng.metu.edu.tr/2020/driverposeest/img/sendingicon.jpg)">
+                <div class="inner">
+                  <h2>Sending Data</h2>
+                  <div class="rating">
+                    <i class="fas fa-paper-plane "></i>
+
+                  </div>
+                  <label for="card3" class="button" aria-hidden="true">
+                    Details
+                  </label>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+
+                  <div class="description">
+                    <p>
+                      We send the date, time, location, type and picture to the MySql database and the web server.
+                      <br></br>
+                      This data can be used for further researchs to minimize car accidents.
+                    </p>
+                  </div>
+                  <div class="location">Sending Data</div>
+
+                  <label for="card3" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <div class="cardSol">
+            <input type="checkbox" id="card4" class="more" aria-hidden="true">
+            <div class="content">
+              <div class="front"
+                style="background-image: url('https://senior.ceng.metu.edu.tr/2020/driverposeest/img/bell.png')">
+                <div class="inner">
+                  <h2>Warning</h2>
+                  <div class="rating">
+                    <i class="fas fa-exclamation-circle"></i>
+
+                  </div>
+                  <label for="card4" class="button" aria-hidden="true">
+                    Details
+                  </label>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+
+                  <div class="description">
+                    <p>We warn the driver with an auditory alarm for 3 seconds.
+                      <br></br>
+                      User can select the alarm sound from web interface.
+                    </p>
+                  </div>
+                  <div class="location">Warning</div>
+
+                  <label for="card4" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <div class="cardSol">
+            <input type="checkbox" id="card5" class="more" aria-hidden="true">
+            <div class="content">
+              <div class="front"
+                style="background-image: url('https://senior.ceng.metu.edu.tr/2020/driverposeest/img/feedback.png')">
+                <div class="inner">
+                  <h2>Giving Feedback</h2>
+                  <div class="rating">
+                    <i class="fas fa-chart-line"></i>
+
+                  </div>
+                  <label for="card5" class="button" aria-hidden="true">
+                    Details
+                  </label>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+
+                  <div class="description">
+                    <p>
+                      The users can view statistics and information about these distraction from our web application.
+                      <br></br>
+                      Location, time and frame of the distractions can be viewed so that users can check and notice
+                      their fault.
+                    </p>
+                  </div>
+                  <div class="location">View Distractions</div>
+
+                  <label for="card5" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- How it works Section -->
+  <section id="solution2" class="bg-light sec2 text-center">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="container-margin"></div>
+          <h2 class="text-black mb-4">How To Use?</h2>
+        </div>
+      </div>
+      <br>
+      <div class="row ">
+        <div class="col-lg-8 mx-auto">
+          <p class="text-black-50">
+            All you need to do is place an order. Our team will come and install a small in-car device and camera inside
+            your car.
+            We will create a OpenCoVid account specialized for your device and your phone number.
+          </p>
+
+          <p class="text-black-50">
+            Then, you can freely enjoy the ride...
+          </p>
+
+        </div>
+      </div>
+      <br>
+      <div class="row ">
+
+        <div class="col-sm-6 col-lg-3">
+
+          <!-- normal -->
+          <div class="ih-item circle effect6 scale_down item_circle"><a href="index.html#solution2">
+              <br></br>
+              <h1 style="font-size:65px;color:#222222">1</h1>
+              <p class="lead" style="font-size:18px"><b>Install</b></p>
+              <div class="info">
+                <h3>Install <i class="fa fa-camera"></i></h3>
+                <p>A small camera is placed in your place.</p>
+              </div>
+            </a></div>
+          <!-- end normal -->
+
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+
+          <!-- normal -->
+          <div class="ih-item circle effect6 scale_down item_circle"><a href="index.html#solution2">
+              <br></br>
+              <h1 style="font-size:65px;color:#222222">2</h1>
+              <p class="lead" style="font-size:18px"><b>Record</b></p>
+              <div class="info">
+                <h3>Record <i class="fa fa-film"></i></h3>
+                <p>Drive as you always do.</p>
+              </div>
+            </a></div>
+          <!-- end normal -->
+
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+
+          <!-- normal -->
+          <div class="ih-item circle effect6 scale_down item_circle"><a href="index.html#solution2">
+              <br></br>
+              <h1 style="font-size:65px;color:#222222">3</h1>
+              <p class="lead" style="font-size:18px"><b>Be Warned</b></p>
+              <div class="info">
+                <h3>Be Warned <i class="fa fa-exclamation-circle"></i></h3>
+                <p>Be warned when you are distracted.</p>
+              </div>
+            </a></div>
+          <!-- end normal -->
+
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+
+          <!-- normal -->
+          <div class="ih-item circle effect6 scale_down item_circle"><a href="index.html#solution2">
+              <br></br>
+              <h1 style="font-size:65px;color:#222222">4</h1>
+              <p class="lead" style="font-size:18px"><b>View</b></p>
+              <div class="info">
+                <h3>View <i class="far fa-chart-bar"></i></h3>
+                <p>View your distractions from our web-page.</p>
+              </div>
+            </a></div>
+          <!-- end normal -->
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="bg-light text-center">
+    <br></br>
+    <div class="container">
+      <h2 class="text-black mb-4">Features</h2>
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div id="carouselExampleIndicators" class="carousel slide" width="90%" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/settings.png" alt="Settings Page">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/map.png" alt="Viewing Locations on Map">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/stats.png" alt="Distraction Statistics">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/details.png" alt="Distraction Details">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="index.html#carouselExampleIndicators" role="button"
+              data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="index.html#carouselExampleIndicators" role="button"
+              data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card statistics col">
+            <div class="d-flex">
+              <img width="20px" height="20px" src="img/statistics2.png" alt="img">
+              <h4 class="statistics-header"> View Statistics</h4>
+            </div>
+            <p>You will see the number of distractions and distraction types you make the most to improve yourself!</p>
+          </div>
+
+          <div class="card statistics col">
+            <div class="d-flex">
+              <img width="20px" height="20px" src="img/alarm2.png" alt="img">
+              <h4 class="statistics-header"> Different Alarm Options</h4>
+            </div>
+            <p>You can choose different alarm options to warn you when you are distracted while driving.</p>
+          </div>
+
+          <div class="card statistics col">
+            <div class="d-flex">
+              <img width="20px" height="20px" src="img/info.png" alt="img">
+              <h4 class="statistics-header"> View Distraction Information</h4>
+            </div>
+            <p>You will be able to view your distraction time, type, location and a picture of that moment on our
+              website.</p>
+          </div>
+        </div>
+
+        <div class="container bg-light" id="item_buttons">
+          More can be found on:
+          <div>
+            <a href="https://www.youtube.com/watch?v=Ih3NVfVymqs" target="_blank"
+              class="btn btn-primary js-scroll-trigger">Video</a>
+            <a href="documents/DriverPoseEst-poster.png" target="_blank"
+              class="btn btn-primary js-scroll-trigger">Poster</a>
+            <a href="https://www.youtube.com/watch?v=80F2oLn7q6U&t=1s" target="_blank"
+              class="btn btn-primary js-scroll-trigger">Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br></br>
+  </section>
+
+  <!-- Documents Section -->
+  <section id="documents" class="contact-section" >
+    <div class="container" >
+      <h2 class="text-white mb-4">Documents</h2>
+      <div class="row">
+
+        <div class="col-md-4 col-lg-2 mb-3 mb-md-0">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <a href="documents/DriverPoseEst-proposal.pdf" target="_blank" class="doc mx-2">
+                <i class="fas fa-paperclip fa-5x mb-2"></i>
+                <div class="text-uppercase m-0">Proposal</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-3 mb-md-0">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <a href="documents/DriverPoseEst-kickoff.pdf" target="_blank" class="doc mx-2">
+                <i class="fas fa-bullseye fa-5x mb-2"></i>
+                <div class="text-uppercase m-0"> Kick-off</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-3 mb-md-0">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <a href="documents/DriverPoseEst-design.pdf" target="_blank" class="doc mx-2">
+                <i class="fas fa-book fa-5x mb-2"></i>
+                <div class="text-uppercase m-0"> SRS</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-3 mb-md-0">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <a href="documents/DriverPoseEst-Slayt.pdf" target="_blank" class="doc mx-2">
+                <i class="far fa-window-maximize fa-5x mb-2"></i>
+                <div class="text-uppercase m-0">Presentation</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-3 mb-md-0">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <a href="documents/DriverPoseEst-poster.png" target="_blank" class="doc mx-2">
+                <i class="fas fa-scroll fa-5x mb-2"></i>
+                <div class="text-uppercase m-0">Poster</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-3 mb-md-0">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <a href="https://www.youtube.com/watch?v=Ih3NVfVymqs" target="_blank" class="doc mx-2">
+                <i class="fas fa-play fa-5x mb-2"></i>
+                <div class="text-uppercase m-0">Video</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container mt-0 ">
+      <div class="container mt-30">
+        <h2 class="text-center mb-4">Our Team</h2>
+        <br></br>
+        <div class="row justify-content-center no-gutters mb-4 mb-lg-5">
+          <div class="col-2">
+            <div class="box5">
+              <img src="https://scholars.bgu.ac.il/file/n25165676/thumbnail_GuyShani.jpg" class="rounded-circle" alt="">
+              <ul class="icon">
+                <a href="mailto:shanigu@bgu.ac.il" target="_blank" class="mx-2">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guy-shani-27809b7/" target="_blank" class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </ul>
+              <div class="box-content">
+                <h3 class="title">Guy Shani</h3>
+                <span class="post">Team Supervisor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-40">
+          <div class="col-2 offset-3">
+            <div class="box5">
+              <img class="rounded-circle"
+                src="https://media-exp1.licdn.com/dms/image/C4D35AQGjhrAEabYhkQ/profile-framedphoto-shrink_800_800/0?e=1605632400&v=beta&t=3Orx3RrgF4IKzQT4PlGITZ5K5R1ASPwHJKK1kzWl1f4"
+                alt="">
+              <ul class="icon">
+                <a href="mailto:dvirsim@post.bgu.ac.il " target="_blank" class="mx-1">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dvir-simhon-9717731a2/" target="_blank" class="mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/dvirsimhon" target="_blank" class="mx-1">
+                  <i class="fab fa-github"></i>
+                </a>
+              </ul>
+              <div class="box-content">
+                <h3 class="title">Dvir Simhon</h3>
+                <span class="post">Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="box5">
+              <img class="rounded-circle"
+                src="https://res.cloudinary.com/serfati/image/upload/v1595173689/as_wudrhc.jpg" alt="">
+              <ul class="icon">
+                <a href="mailto:serfata@post.bgu.ac.il" target="_blank" class="mx-1">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/serfati" target="_blank" class="mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.github.com/serfati" target="_blank" class="mx-1">
+                  <i class="fab fa-github"></i>
+                </a>
+              </ul>
+              <div class="box-content">
+                <h3 class="title">Avihai Serfati</h3>
+                <span class="post">Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 ">
+            <div class="box5">
+              <img class="rounded-circle"
+                src="https://media-exp1.licdn.com/dms/image/C4D35AQGjhrAEabYhkQ/profile-framedphoto-shrink_800_800/0?e=1605632400&v=beta&t=3Orx3RrgF4IKzQT4PlGITZ5K5R1ASPwHJKK1kzWl1f4"
+                alt="">
+              <ul class="icon">
+
+                <a href="mailto:assafattias93@gmail.com " target="_blank" class="mx-1">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/oemrebilici/" target="_blank" class="mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.github.com/serfati" target="_blank" class="mx-1">
+                  <i class="fab fa-github"></i>
+                </a>
+              </ul>
+              <div class="box-content">
+                <h3 class="title">Assaf Attias</h3>
+                <span class="post">Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="documents" class="contact-section"">
+    <div class="container" >
+      <h2 class="text-white mb-4">Tech Stack</h2>
+      <div class="" style="justify-content: space-around; display:flex">
+        <div>
+          <img class="img-fluid" src="img/python.png" style="max-width: 50px" alt="">
+        </div>
+        <div>
+          <img class="img-fluid" src="img/MySQL.png" style="max-width: 50px" alt="">
+        </div>
+        <div>
+          <img class="img-fluid" src="img/css.png" style="max-height: 50px" alt="">
+        </div>
+        <div>
+          <img class="img-fluid" src="img/nodejs.png" style="max-height: 50px" alt="">
+        </div>
+        <div>
+          <img class="img-fluid" src="img/bootstrap.png" style="max-width: 50px" alt="">
+        </div>
+        <div>
+          <img class="img-fluid" src="img/html.png" style="max-width: 50px" alt="">
+        </div>
+        <div>
+          <img class="img-fluid"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1200px-Keras_logo.svg.png"
+            style="max-width: 50px" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section small text-center" style='background-color: rgb(80, 55, 104);'>
+    <br>
+    <div class="container text-white">
+      Copyright &copy; OpenCoVid 2020
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
